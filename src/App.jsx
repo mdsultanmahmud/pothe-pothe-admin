@@ -1,19 +1,16 @@
+import { Toaster } from "react-hot-toast";
+import Navbar from "./components/Navbar/Navbar";
+import Sidebar from "./components/Sidebar/Sidebar";
+
 function App() {
   return (
     <div>
-      <h1>hello world</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-        molestias doloremque quasi accusamus facere quam itaque repellat
-        voluptatem corrupti accusantium? Harum sequi ut nam recusandae rerum
-        autem dicta, consectetur optio blanditiis incidunt similique pariatur
-        quam libero fugit doloremque veniam neque amet quas assumenda ipsam
-        nesciunt! Sunt a dignissimos itaque doloremque.
-      </p>
-      <br />
+      <Navbar />
       <hr />
-      <br />
-      <a href="#">this is link</a>
+      <div className="pothe__pothe__admin__app__content">
+        <Sidebar />
+      </div>
+      <Toaster />
     </div>
   );
 }
