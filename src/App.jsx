@@ -6,7 +6,6 @@ function App() {
   return (
     <div>
       <Navbar />
-      <hr />
       <div className="pothe__pothe__admin__app__content">
         <Sidebar />
       </div>

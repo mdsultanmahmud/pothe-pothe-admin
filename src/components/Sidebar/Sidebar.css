@@ -1,0 +1,41 @@
+.pothe__pothe__sidebar__container {
+  width: 18%;
+  min-height: calc(100vh - 80px);
+  background-color: #fff;
+  box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+.pothe__pothe__sidebar__items {
+  padding: 50px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pothe__pothe__sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  padding: 10px 10px;
+  border-radius: 4px;
+}
+.pothe__pothe__sidebar__item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.pothe__pothe__sidebar__item .icon {
+  font-size: 25px;
+  color: #424949;
+}
+.pothe__pothe__sidebar__item p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #424949;
+}
+
+@media screen and (max-width: 900px) {
+  .pothe__pothe__sidebar__item p {
+    display: none;
+  }
+}

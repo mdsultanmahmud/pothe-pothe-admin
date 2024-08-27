@@ -9,7 +9,7 @@
 }
 
 :root {
-  --bg-color: red;
+  --bg-color: #f8f7fc;
   --text-color: gray;
 }
 
@@ -18,7 +18,7 @@ html {
 }
 body {
   min-height: 100vh;
-  background-color: #fcfcfc;
+  background-color: var(--bg-color);
 }
 a {
   text-decoration: none;
