@@ -1,0 +1,65 @@
+.pothe__pothe__add__food__container {
+  padding: 60px 70px;
+  color: #6d6d6d;
+  font-size: 16px;
+  flex: 1;
+}
+
+.pothe__pothe___add__food__form__container {
+  gap: 20px;
+}
+.add__food__img__upload label {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+.add__food__img__upload .upload__img__icon {
+  width: 120px;
+  height: 120px;
+}
+.add__food__name,
+.add__food__description {
+  width: max(40%, 280px);
+}
+.add__food__name input,
+.add__food__description textarea {
+  padding: 10px;
+  outline-color: tomato;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  border: 1px solid #6d6d6d;
+}
+
+.add__food__category__price {
+  display: flex;
+  gap: 30px;
+}
+.add__food__category__price select,
+.add__food__category__price input {
+  padding: 10px;
+  max-width: 120px;
+  outline-color: tomato;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid #6d6d6d;
+}
+
+.add__food__btn{
+    width: 270px;
+    border: 1px solid tomato;
+    background-color: tomato;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all ease-in-out 0.3s;
+}
+
+.add__food__btn:hover{
+    color: tomato;
+    background-color: transparent;
+}

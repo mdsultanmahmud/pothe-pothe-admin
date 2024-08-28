@@ -36,3 +36,9 @@ p {
 .pothe__pothe__admin__app__content {
   display: flex;
 }
+
+.flex__col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
