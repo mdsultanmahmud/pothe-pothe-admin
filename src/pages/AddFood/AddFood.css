@@ -45,21 +45,37 @@
   border: 1px solid #6d6d6d;
 }
 
-.add__food__btn{
-    width: 270px;
-    border: 1px solid tomato;
-    background-color: tomato;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 10px 0px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 30px;
-    transition: all ease-in-out 0.3s;
+.add__food__btn {
+  width: 270px;
+  border: 1px solid tomato;
+  background-color: tomato;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: all ease-in-out 0.3s;
 }
 
-.add__food__btn:hover{
-    color: tomato;
-    background-color: transparent;
+.add__food__btn:hover {
+  color: tomato;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 750px) {
+  .pothe__pothe__add__food__container {
+    padding: 20px 10px;
+  }
+  .add__food__btn {
+    width: 100%;
+  }
+
+  .add__food__category__price {
+    justify-content: space-between;
+  }
+  .add__food__img__upload label {
+    margin: 0 auto;
+  }
 }

@@ -1,0 +1,65 @@
+.pothe__pothe__all__foods__container {
+  padding: 40px 60px;
+  flex: 1;
+}
+.foos__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: tomato;
+}
+.food__list__item__table {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border: 1px solid #cacaca;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.food__list__item__title {
+  background-color: tomato;
+  color: #fff;
+  padding: 20px 5px;
+  font-size: 18px;
+}
+.food__list__item__table img {
+  width: 70px;
+  border-radius: 10px;
+}
+
+.food__item__action__btn {
+  cursor: pointer;
+  border: 1px solid tomato;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: tomato;
+  transition: all ease-in-out 0.3s;
+}
+.food__item__action__btn:hover {
+  color: #fff;
+  background-color: tomato;
+}
+
+@media screen and (max-width: 600px) {
+  .foos__title {
+    font-size: 25px;
+  }
+
+  .food__list__item__table {
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 15px;
+  }
+  .pothe__pothe__all__foods__container {
+    padding: 10px 20px;
+  }
+  .food__list__item__title {
+    display: none;
+  }
+}

@@ -3,9 +3,9 @@ import "./AddFood.css";
 import { FaRegImage } from "react-icons/fa6";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { url } from "../../utils/getUrl";
 
 const AddFood = () => {
-  const url = `http://localhost:5000/api/v1/food`;
   const [image, setImage] = useState(false);
   const [data, setData] = useState({
     name: "",
@@ -19,9 +19,9 @@ const AddFood = () => {
   };
   const handleAddFood = async (e) => {
     e.preventDefault();
-    if(!image){
-      toast.error('Please upload an image.')
-      return
+    if (!image) {
+      toast.error("Please upload an image.");
+      return;
     }
     const formData = new FormData();
     formData.append("name", data.name);
@@ -29,9 +29,11 @@ const AddFood = () => {
     formData.append("price", Number(data.price));
     formData.append("category", data.category);
     formData.append("image", image);
-    
 
-    const res = await axios.post(`${url}/add`, formData);
+    const res = await axios.post(
+      `${url?.baseURL || url?.deploymentURL}/food/add`,
+      formData
+    );
     if (res.data.success) {
       setData({
         name: "",
